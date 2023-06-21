@@ -1,0 +1,40 @@
+<h1 mat-dialog-title style="text-align: center;"> {{data.name}}</h1>
+<div mat-dialog-content>
+  <div>
+  
+    <ul>
+      <li>
+        <span > Nombre:  </span> {{data.name}}
+      </li>
+      <li>
+          <span >Rotation period: </span> {{data.rotation_period}}
+      </li>
+      <li>
+          <span >Orbital period: </span> {{data.orbital_period}}
+      </li>
+      <li>
+          <span >Diameter: </span> {{data.diameter}}
+      </li>
+      <li>
+          <span >Climate: </span> {{data.climate}}
+      </li>
+      <li>
+          <span >Gravity: </span> {{data.gravity}}
+      </li>
+      <li>
+          <span >Terrain: </span> {{data.terrain}}
+      </li>
+      <li>
+          <span >Surface water: </span> {{data.surface_water}}
+      </li>
+      <li>
+          <span >Population: </span> {{data.population}}
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cerrar</button>
+  
+</div>

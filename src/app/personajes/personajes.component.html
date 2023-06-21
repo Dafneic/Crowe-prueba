@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+  <body>
+    
+<table >
+    <thead >
+    <tr>
+        <th>NAME</th>
+        <th>HEIGHT</th>
+        <th>MASS</th>
+        <th> DETAILS</th>
+    </tr>
+</thead>
+<tbody *ngFor=" let res of personajes">
+<tr>
+    <td scope="row">{{res.name}} </td>
+    <td >{{res.height}} </td>
+    <td >{{res.mass}} </td>
+     <td>
+        <button mat-button color="primary" (click)="openDialog(res)">DETAILS</button>
+     </td>
+</tr>
+</tbody>
+   
+</table>
+
+
+  </body>
+  <footer>
+
+  </footer>

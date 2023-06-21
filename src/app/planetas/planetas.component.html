@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+  <body>
+    
+<table>
+    <thead>
+    <tr>
+        <th >NAME</th>
+        <th>DIAMETER</th>
+        <th>CLIMATE</th>
+        <th> DETAILS</th>
+    </tr>
+</thead>
+<tbody *ngFor="let res of planetas">
+    <tr>
+        <td scope="row"> {{res.name}}</td>
+        <td scope="row"> {{res.diameter}}</td>
+        <td scope="row"> {{res.climate}}</td>
+        <td> <button mat-button color="primary" (click)="openDialog(res)">DETAILS</button></td>
+
+    </tr>
+</tbody>
+</table>
+  </body>
+  <footer>
+
+  </footer>
